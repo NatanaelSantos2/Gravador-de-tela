@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+id startBtn
+id stopBtn
+layout activity_main
+string iniciar_grava_o
+string parar_grava_o

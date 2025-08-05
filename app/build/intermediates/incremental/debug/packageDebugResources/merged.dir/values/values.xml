@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="iniciar_grava_o">Iniciar Gravação</string>
+    <string name="parar_grava_o">Parar Gravação</string>
+</resources>

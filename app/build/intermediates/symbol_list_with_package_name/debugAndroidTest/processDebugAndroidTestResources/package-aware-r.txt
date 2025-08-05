@@ -1,0 +1,3 @@
+com.example.screenrecorder.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
