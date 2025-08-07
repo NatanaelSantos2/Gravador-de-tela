@@ -1,6 +1,14 @@
 [
     {
-        "merged": "com.example.screenrecorder.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "com.example.screenrecorder.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\naelb\\.gradle\\daemon\\9.0-milestone-1\\com.example.screenrecorder.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\naelb\\.gradle\\daemon\\9.0-milestone-1\\com.example.screenrecorder.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.screenrecorder.app-debug-31:/drawable_rounded_background.xml.flat",
+        "source": "com.example.screenrecorder.app-main-33:/drawable/rounded_background.xml"
+    },
+    {
+        "merged": "com.example.screenrecorder.app-debug-31:/layout_floating_button.xml.flat",
+        "source": "com.example.screenrecorder.app-main-33:/layout/floating_button.xml"
     }
 ]

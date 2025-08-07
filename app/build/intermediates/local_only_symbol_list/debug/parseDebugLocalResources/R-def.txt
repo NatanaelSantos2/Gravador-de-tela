@@ -1,7 +1,10 @@
 R_DEF: Internal format may change without notice
 local
+drawable rounded_background
 id startBtn
 id stopBtn
+id timeText
 layout activity_main
+layout floating_button
 string iniciar_grava_o
 string parar_grava_o

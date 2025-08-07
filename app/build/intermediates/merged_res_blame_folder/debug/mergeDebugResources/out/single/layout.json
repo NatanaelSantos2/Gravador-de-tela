@@ -1,6 +1,10 @@
 [
     {
-        "merged": "com.example.screenrecorder.app-mergeDebugResources-30:/layout/activity_main.xml",
-        "source": "com.example.screenrecorder.app-main-33:/layout/activity_main.xml"
+        "merged": "com.example.screenrecorder.app-mergeDebugResources-30:/layout/floating_button.xml",
+        "source": "com.example.screenrecorder.app-main-33:/layout/floating_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\naelb\\.gradle\\daemon\\9.0-milestone-1\\com.example.screenrecorder.app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\naelb\\.gradle\\daemon\\9.0-milestone-1\\com.example.screenrecorder.app-main-33:\\layout\\activity_main.xml"
     }
 ]

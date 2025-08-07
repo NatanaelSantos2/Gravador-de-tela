@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.media.projection.MediaProjectionManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -41,6 +43,13 @@ public class MainActivity extends Activity {
                 Toast.makeText(this, "Gravação parada", Toast.LENGTH_SHORT).show();
             }
         });
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
+            Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:" + getPackageName()));
+            startActivityForResult(intent, 1234);
+        }
+
 
         // REMOVIDO: Permissão de áudio
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

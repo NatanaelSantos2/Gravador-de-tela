@@ -28,6 +28,9 @@ public class MyForegroundService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        FloatingControl floatingControl = new FloatingControl(getApplicationContext());
+        floatingControl.showFloatingButton();
+
         createNotificationChannel();
         startForeground(NOTIF_ID, getNotification());
 

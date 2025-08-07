@@ -1,5 +1,6 @@
 package com.example.screenrecorder;
 
+import android.annotation.SuppressLint;
 import android.media.AudioAttributes;
 import android.media.AudioFormat;
 import android.media.AudioPlaybackCaptureConfiguration;
@@ -91,6 +92,7 @@ public class AudioRecorderThread extends Thread {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private void initAudioComponents() throws IOException {
         // Configure AudioRecord with AudioPlaybackCapture
         AudioPlaybackCaptureConfiguration config = new AudioPlaybackCaptureConfiguration.Builder(mediaProjection)

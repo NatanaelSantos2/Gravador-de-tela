@@ -19,7 +19,7 @@ public class ScreenRecorder {
     private static final String MIME_TYPE = "video/avc";
     private static final int FRAME_RATE = 60;
     private static final int IFRAME_INTERVAL = 1;
-    private static final int BIT_RATE = 9000 * 9000;
+    private static final int BIT_RATE = 8_000_000;
 
     private int width;
     private int height;
@@ -43,6 +43,14 @@ public class ScreenRecorder {
         dpi = metrics.densityDpi;
         width = metrics.widthPixels;
         height = metrics.heightPixels;
+
+        // Garantir que as dimensões estejam em modo paisagem
+        if (width < height) {
+            int temp = width;
+            width = height;
+            height = temp;
+        }
+
     }
 
     public void start() throws IOException {
