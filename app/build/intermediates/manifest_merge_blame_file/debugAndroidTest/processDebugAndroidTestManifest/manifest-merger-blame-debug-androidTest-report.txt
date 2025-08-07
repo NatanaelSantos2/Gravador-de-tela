@@ -3,24 +3,24 @@
 3    package="com.example.screenrecorder.test" >
 4
 5    <uses-sdk
-5-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:5:5-74
+5-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:5:5-74
 6        android:minSdkVersion="29"
-6-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:5:15-41
+6-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:5:15-41
 7        android:targetSdkVersion="34" />
-7-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:5:42-71
+7-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:11:5-15:76
+9-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:11:5-15:76
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:11:22-76
+10-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:14:22-52
+11-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:13:22-53
+12-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:13:22-53
 13        android:label="Tests for com.example.screenrecorder"
-13-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:15:22-74
+13-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:15:22-74
 14        android:targetPackage="com.example.screenrecorder" />
-14-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:12:22-72
+14-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:12:22-72
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] C:\Users\naelb\.gradle\caches\9.0-milestone-1\transforms\e84d8e32575694a4abaf162abe1c651c\transformed\jetified-core-1.5.0\AndroidManifest.xml:24:5-72
@@ -40,12 +40,12 @@
 22    </queries>
 23
 24    <application
-24-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:7:5-9:19
+24-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:7:5-9:19
 25        android:debuggable="true"
 26        android:extractNativeLibs="false" >
 27        <uses-library android:name="android.test.runner" />
-27-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:8:9-60
-27-->C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest17186437744229763822.xml:8:23-57
+27-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:8:9-60
+27-->C:\Users\naelb\Gravador-de-tela\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1209048115552364909.xml:8:23-57
 28
 29        <activity
 29-->[androidx.test:core:1.5.0] C:\Users\naelb\.gradle\caches\9.0-milestone-1\transforms\e84d8e32575694a4abaf162abe1c651c\transformed\jetified-core-1.5.0\AndroidManifest.xml:27:9-34:20
