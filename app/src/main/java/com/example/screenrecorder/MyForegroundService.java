@@ -20,6 +20,7 @@ import android.view.WindowManager;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
+import java.io.File;
 import java.io.IOException;
 
 public class MyForegroundService extends Service {
@@ -30,6 +31,8 @@ public class MyForegroundService extends Service {
     private MediaProjection mediaProjection;
     private MediaRecorder mediaRecorder;
     private VirtualDisplay virtualDisplay;
+    private MediaProjection.Callback projectionCallback;
+    private boolean isRecording = false;
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -57,9 +60,7 @@ public class MyForegroundService extends Service {
             wm.getDefaultDisplay().getRealSize(size);
 
             mediaRecorder = new MediaRecorder();
-
-            // Usa o microfone sempre (funcional em todos os Androids)
-            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+            // REMOVIDO: mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
             mediaRecorder.setVideoSource(MediaRecorder.VideoSource.SURFACE);
             mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
 
@@ -67,22 +68,21 @@ public class MyForegroundService extends Service {
                     + "/Gravacao_" + System.currentTimeMillis() + ".mp4";
             mediaRecorder.setOutputFile(path);
 
-            // Qualidade alta
             mediaRecorder.setVideoSize(size.x, size.y);
-            mediaRecorder.setVideoEncodingBitRate(3500 * 1000); // 3.5 Mbps
+            mediaRecorder.setVideoEncodingBitRate(3500 * 1000);
             mediaRecorder.setVideoFrameRate(60);
             mediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
-            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+            // REMOVIDO: mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
 
             mediaRecorder.prepare();
 
-            mediaProjection.registerCallback(new MediaProjection.Callback() {
+            projectionCallback = new MediaProjection.Callback() {
                 @Override
                 public void onStop() {
-                    super.onStop();
                     stopRecording();
                 }
-            }, null);
+            };
+            mediaProjection.registerCallback(projectionCallback, null);
 
             virtualDisplay = mediaProjection.createVirtualDisplay("ScreenRec",
                     size.x, size.y, screenDensity,
@@ -90,6 +90,7 @@ public class MyForegroundService extends Service {
                     mediaRecorder.getSurface(), null, null);
 
             mediaRecorder.start();
+            isRecording = true;
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -119,7 +120,7 @@ public class MyForegroundService extends Service {
 
     private void stopRecording() {
         try {
-            if (mediaRecorder != null) {
+            if (isRecording && mediaRecorder != null) {
                 mediaRecorder.stop();
                 mediaRecorder.reset();
                 mediaRecorder.release();
@@ -132,10 +133,14 @@ public class MyForegroundService extends Service {
             }
 
             if (mediaProjection != null) {
+                if (projectionCallback != null) {
+                    mediaProjection.unregisterCallback(projectionCallback);
+                }
                 mediaProjection.stop();
                 mediaProjection = null;
             }
 
+            isRecording = false;
             stopForeground(true);
             stopSelf();
 
@@ -147,17 +152,7 @@ public class MyForegroundService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mediaRecorder != null) {
-            mediaRecorder.stop();
-            mediaRecorder.reset();
-            mediaRecorder.release();
-        }
-        if (virtualDisplay != null) {
-            virtualDisplay.release();
-        }
-        if (mediaProjection != null) {
-            mediaProjection.stop();
-        }
+        stopRecording();
     }
 
     @Nullable

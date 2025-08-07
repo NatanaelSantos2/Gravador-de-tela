@@ -34,7 +34,8 @@
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.screenrecorder.MainActivity"
             android:exported="true" >

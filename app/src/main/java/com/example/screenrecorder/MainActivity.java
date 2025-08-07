@@ -42,10 +42,9 @@ public class MainActivity extends Activity {
             }
         });
 
-        // Permissões
+        // REMOVIDO: Permissão de áudio
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             requestPermissions(new String[]{
-                    android.Manifest.permission.RECORD_AUDIO,
                     android.Manifest.permission.WRITE_EXTERNAL_STORAGE
             }, 1);
         }

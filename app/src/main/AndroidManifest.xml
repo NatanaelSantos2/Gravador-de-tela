@@ -14,6 +14,7 @@
         android:maxSdkVersion="32" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:label="Gravador de Tela"
         android:supportsRtl="true"

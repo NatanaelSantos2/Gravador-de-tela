@@ -25,10 +25,10 @@ com.example.screenrecorder.app-jetified-emoji2-views-helper-1.2.0-23 C:\Users\na
 com.example.screenrecorder.app-jetified-savedstate-1.2.1-24 C:\Users\naelb\.gradle\caches\9.0-milestone-1\transforms\f2bb8d9a5f95d2ccd4192e650f99c98f\transformed\jetified-savedstate-1.2.1\res
 com.example.screenrecorder.app-appcompat-1.6.1-25 C:\Users\naelb\.gradle\caches\9.0-milestone-1\transforms\f6f52ef0355d65e2283a16da2425da3e\transformed\appcompat-1.6.1\res
 com.example.screenrecorder.app-lifecycle-livedata-core-2.6.1-26 C:\Users\naelb\.gradle\caches\9.0-milestone-1\transforms\ff0d61f09b3774cca5a7861b62a34669\transformed\lifecycle-livedata-core-2.6.1\res
-com.example.screenrecorder.app-pngs-27 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\generated\res\pngs\debug
-com.example.screenrecorder.app-resValues-28 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\generated\res\resValues\debug
-com.example.screenrecorder.app-packageDebugResources-29 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.screenrecorder.app-packageDebugResources-30 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.screenrecorder.app-debug-31 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.screenrecorder.app-debug-32 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\src\debug\res
-com.example.screenrecorder.app-main-33 C:\Users\naelb\Downloads\ScreenRecorderJava_ProjetoCompleto\app\src\main\res
+com.example.screenrecorder.app-pngs-27 C:\Users\naelb\Gravador-de-tela\app\build\generated\res\pngs\debug
+com.example.screenrecorder.app-resValues-28 C:\Users\naelb\Gravador-de-tela\app\build\generated\res\resValues\debug
+com.example.screenrecorder.app-packageDebugResources-29 C:\Users\naelb\Gravador-de-tela\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.screenrecorder.app-packageDebugResources-30 C:\Users\naelb\Gravador-de-tela\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.screenrecorder.app-debug-31 C:\Users\naelb\Gravador-de-tela\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.screenrecorder.app-debug-32 C:\Users\naelb\Gravador-de-tela\app\src\debug\res
+com.example.screenrecorder.app-main-33 C:\Users\naelb\Gravador-de-tela\app\src\main\res

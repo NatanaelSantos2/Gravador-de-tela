@@ -1,8 +1,8 @@
-#Tue Aug 05 13:26:24 BRT 2025
-base.0=C\:\\Users\\naelb\\Downloads\\ScreenRecorderJava_ProjetoCompleto\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\naelb\\Downloads\\ScreenRecorderJava_ProjetoCompleto\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\naelb\\Downloads\\ScreenRecorderJava_ProjetoCompleto\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.3=C\:\\Users\\naelb\\Downloads\\ScreenRecorderJava_ProjetoCompleto\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+#Thu Aug 07 12:20:32 BRT 2025
+base.0=C\:\\Users\\naelb\\Gravador-de-tela\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\naelb\\Gravador-de-tela\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\naelb\\Gravador-de-tela\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.3=C\:\\Users\\naelb\\Gravador-de-tela\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=1/classes.dex
