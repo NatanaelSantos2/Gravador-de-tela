@@ -19,7 +19,7 @@ public class ScreenRecorder {
     private static final String MIME_TYPE = "video/avc";
     private static final int FRAME_RATE = 60;
     private static final int IFRAME_INTERVAL = 1;
-    private static final int BIT_RATE = 8_000_000;
+    private static final int BIT_RATE = 16_000_000;
 
     private int width;
     private int height;

@@ -1,9 +1,11 @@
 package com.example.screenrecorder;
 
+import android.content.ContentValues;
 import android.media.MediaCodec;
 import android.media.MediaFormat;
 import android.media.MediaMuxer;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.util.Log;
 
 import java.io.File;
@@ -26,7 +28,7 @@ public class MediaMuxerWrapper {
 
     public MediaMuxerWrapper() throws IOException {
         String fileName = "Gravacao_" + System.currentTimeMillis() + ".mp4";
-        File outputFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES), fileName);
+        File outputFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), fileName);
         outputPath = outputFile.getAbsolutePath();
 
         mediaMuxer = new MediaMuxer(outputPath, MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4);
